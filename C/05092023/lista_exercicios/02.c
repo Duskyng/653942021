@@ -6,19 +6,24 @@
 
 int main() {
 
-    int A;
-    int *B, **C, ***D;
+    int A = 0, *B, **C, ***D;
+
+    B = &A;
+    C = &B;
+    D = &C;
 
     printf("Digite um valor para \"A\": ");
     scanf("%i", &A);
+    printf("%d\n", A);
 
-    *B = A;
-    **C = *B;
-    ***D = **C;
-
+    *B = A + A;
     printf("%d\n", *B);
-    printf("%d\n", *C);
-    printf("%d\n", *D);
+
+    **C = *B + A;
+    printf("%d\n", **C);
+
+    ***D = **C + A;
+    printf("%d\n", ***D);
 
     return 0;
 
