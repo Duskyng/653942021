@@ -2,28 +2,17 @@
 
 #include<stdio.h>
 #include<stdlib.h>
-#include<string.h>
 
 int main() {
 
-    int A = 0, *B, **C, ***D;
-
-    B = &A;
-    C = &B;
-    D = &C;
+    int A = 0, *B = &A, **C = &B, ***D = &C;
 
     printf("Digite um valor para \"A\": ");
     scanf("%i", &A);
-    printf("%d\n", A);
 
-    *B = A + A;
-    printf("%d\n", *B);
-
-    **C = *B + A;
-    printf("%d\n", **C);
-
-    ***D = **C + A;
-    printf("%d\n", ***D);
+    printf("O dobro de \"A\" e %d\n", (*B * 2));
+    printf("O triplo de \"A\" e %d\n", (**C * 3));
+    printf("O quadruplo de \"A\" e %d\n", (***D * 4));
 
     return 0;
 
