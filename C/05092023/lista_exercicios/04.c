@@ -6,37 +6,35 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-float inputNotas(float x, float y) {
+void inputNotas(float *nota1, float *nota2) {
 
     printf("Digite a primera nota: ");
-    scanf("%f", &x);
-    printf("A primeira nota e: %f\n", x);
+    scanf("%f", nota1);
     
     printf("Digite a segunda nota: ");
-    scanf("%f", &y);
-    printf("A segunda nota e: %f\n", y);
+    scanf("%f", nota2);
 
-    return x, y;
 }
 
-float calculoMedia(float x, float y) {
+void calculoMedia(float *nota1, float *nota2, float *mediaSimples, float *mediaPonderada) {
 
-    float media;
+    *mediaSimples = (*nota1 + *nota2) / 2;
+    *mediaPonderada = (*nota1 + *nota2 * 2)/3;
 
-    media = x + y;
-
-    return media;
 }
 
 int main() {
 
-    float nota1, nota2, media;
+    float nota1, nota2, mediaSimples, mediaPonderada;
 
-    nota1, nota2 = inputNotas(nota1, nota2);
-    media = calculoMedia(nota1, nota2);
+    inputNotas(&nota1, &nota2);
+    calculoMedia(&nota1, &nota2, &mediaSimples, &mediaPonderada);
 
-    printf("O valor da primeira nota e: ");
-    printf("O valor da segunda nota e: ");
+    printf("O valor da primeira nota e: %.2f\n", nota1);
+    printf("O valor da segunda nota e: %.2f\n", nota2);
+
+    printf("A media simples e: %.2f\n", mediaSimples );
+    printf("A media ponderada e: %.2f\n", mediaPonderada);
 
     return 0;
 }
