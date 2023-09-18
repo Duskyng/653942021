@@ -18,7 +18,7 @@ disponibilizadas em um menu.
 - A partir do RA, permite ao usuário excluir um aluno da turma em questão.
 
 ### Resumo estatístico da turma:
-- Apresentar os seguintes dados da turma em questão:
+~Apresentar os seguintes dados da turma em questão:~
 - Quantidade de alunos
 - Maior nota (nome do aluno e nota)
 - Menor nota (nome do aluno e nota)
