@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho WEB</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="first-item"><a href="index.html">Home</a></li>
+            <li><a href="index.html#cursos">Cursos</a></li>
+            <li><a href="index.html#sobre">Sobre Nós</a></li>
+            <li><a href="index.html#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="banner">
+            <div class="banner-typo">
+                <h1>loja de cursos</h1>
+            </div>
+        </div>
+    </header>
+    <section class="content-section">
+        <div id="cursos">
+            <div class="header-name">
+                <h1>Cursos Disponiveis</h1>
+            </div>
+            <div class="content-cursos">
+                <h2>Curso Fullstack</h2>
+                <p>O curso foi modelado especialmente para pessoas que tem o interesse em ingressar na área de desenvolvimento Web e Mobile integrando seu projeto de software com uma das tecnologias mais utilizadas para os recursos de “Back-End” o “Spring Boot”. Durante o curso o aluno ira desenvolver um sistema de compra e venda de mercadorias, gerenciando seu financeiro e estoque. Este projeto conta com 4 módulos para cada tecnologia especifica que será utilizada neste projeto, são eles: </p>
+
+                <div class="card-cursos">
+
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="img/Java.png">
+                            <h3>Java OOP</h3>
+                            <button class="abre-modal1">Saiba Mais</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <img class="card-img" src="img/Angular.png">
+                            <h3>Angular</h3>
+                            <button class="abre-modal2">Saiba Mais</button>
+                        </div>
+                    </div>         
+
+                    <div class="card">
+                        <div class="card-content">
+                            <img class="card-img" src="img/SpringBoot.png">
+                            <h3>Spring Boot</h3>
+                            <button class="abre-modal3">Saiba Mais</button>
+                        </div>
+                    </div>         
+
+                    <div class="card">
+                        <div class="card-content">
+                            <img class="card-img" src="img/AndroidStudio.jpg">
+                            <h3>Android Studio</h3>
+                            <button class="abre-modal4">Saiba Mais</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>   
+
+        </div>
+
+        <dialog class="modal1" id="modal1">
+            <h2>Orientação a Objetos com Java</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam aliquid quidem sit aliquam ducimus harum quae sunt sed cupiditate? Recusandae enim dolorum saepe libero eligendi pariatur dolores nemo ea sapiente?</p>
+            <button class="fecha-modal1">Fechar</button>
+        </dialog>
+
+
+        <dialog class="modal2" id="modal2">
+            <h2>Angular</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam aliquid quidem sit aliquam ducimus harum quae sunt sed cupiditate? Recusandae enim dolorum saepe libero eligendi pariatur dolores nemo ea sapiente?</p>
+            <button class="fecha-modal2">Fechar</button>
+        </dialog>
+
+
+        <dialog class="modal3" id="modal3">
+            <h2>SpringBoot</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam aliquid quidem sit aliquam ducimus harum quae sunt sed cupiditate? Recusandae enim dolorum saepe libero eligendi pariatur dolores nemo ea sapiente?</p>
+            <button class="fecha-modal3">Fechar</button>
+        </dialog>
+
+
+        <dialog class="modal4" id="modal4">
+            <h2>Android Studio</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam aliquid quidem sit aliquam ducimus harum quae sunt sed cupiditate? Recusandae enim dolorum saepe libero eligendi pariatur dolores nemo ea sapiente?</p>
+            <button class="fecha-modal4">Fechar</button>
+        </dialog>
+
+        <div id="sobre">
+            <div class="header-name">
+                <h2>Sobre nós</h2>
+            </div>
+            <div class="main-content">
+                <div class="left-side-content">
+                    <img src="img/about-us.png" alt="">
+                </div>
+                <div class="right-side-content">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, rerum autem in tenetur officiis, nobis, aliquid asperiores sequi libero dolorum similique. Ullam eius ducimus suscipit excepturi blanditiis accusamus, aspernatur amet? Lorem ipsum dolor sit amet consectetur adipisicing elit. At molestias, minima, ipsam quod ipsa rerum quia corrupti recusandae similique provident maxime aperiam? Nihil blanditiis placeat eos non ea distinctio unde! Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro asperiores ipsum tempora voluptates perspiciatis numquam corrupti id. Harum atque nemo laborum sit officiis culpa non ipsam aspernatur, ad eos. Eius?</p>
+                </div>
+            </div>
+        </div>
+            
+    </section>
+
+    <div class="contato">
+        <div class="contato-content">
+            <div class="contato-left">
+                <h1>Fale Conosco</h1>
+                
+                <div class="formulario">
+                    <label for="">Seu nome:</label>
+                    <input type="text">
+                </div>
+                
+                <div class="formulario">
+                    <label for="">Seu email:</label>
+                    <input type="email">
+                </div>  
+                
+                <div class="formulario">
+                    <label for="">Sua mensagem:</label>
+                    <input type="text" style="height: 15em;">
+                </div>
+
+                <button>Enviar!</button>
+
+            </div>
+            <div class="contato-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234327.84776310538!2d-51.970608649999996!3d-23.4109031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd6ee42618c1f%3A0xc356592828e03925!2sMaring%C3%A1%20-%20Floriano%2C%20Maring%C3%A1%20-%20PR!5e0!3m2!1spt-BR!2sbr!4v1695926359598!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Desenvovido por: Paulo Sebold</p>
+        <p>R.A 65934-2021</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
